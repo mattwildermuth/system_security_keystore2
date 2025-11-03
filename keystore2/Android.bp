@@ -89,6 +89,7 @@ rust_library {
         "liblibsqlite3_sys",
         "librusqlite",
     ],
+    recovery_available: true,
 }
 
 rust_library {
