@@ -165,6 +165,21 @@ rust_binary {
         "librusqlite",
     ],
     afdo: true,
+    // recovery_available: true,
+}
+
+rust_binary {
+    name: "keystore2.recovery",
+    defaults: ["keystore2_defaults"],
+    rustlibs: [
+        "libkeystore2",
+        "liblegacykeystore-rust",
+        "librusqlite",
+    ],
+    afdo: true,
+    recovery: true,
+    bootstrap: true,
+    stem: "keystore2",
 }
 
 // Keystore Flag definitions
